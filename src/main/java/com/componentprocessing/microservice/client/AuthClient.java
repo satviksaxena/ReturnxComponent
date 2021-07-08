@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 import com.componentprocessing.microservice.dto.ValidatingDTO;
 
-@FeignClient(name = "auth-client", url = "http://localhost:8008/authorization")
+@FeignClient(name = "auth-client", url = "https://returnxauth.herokuapp.com/authorization")
 public interface AuthClient {
 	
 	 @GetMapping(value = "/validate")

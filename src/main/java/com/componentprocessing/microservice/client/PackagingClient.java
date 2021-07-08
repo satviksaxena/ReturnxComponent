@@ -11,7 +11,7 @@ import feign.Headers;
 
 
 @Headers("Content-Type: application/json")
-@FeignClient(name="pack-feign",url = "localhost:8000/packaging") 
+@FeignClient(name="pack-feign",url = "https://returnxpackaging.herokuapp.com/packaging") 
 public interface PackagingClient {
 	
 	@PostMapping("/getPackagingDeliveryCharge/{type}/{count}")

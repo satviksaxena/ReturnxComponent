@@ -10,7 +10,7 @@ import com.componentprocessing.microservice.dto.PackagingAndDeliveryDTO;
 import feign.Headers;
 
 @Headers("Content-Type: application/json")
-@FeignClient(name = "payment-service", url = "localhost:8001/payment")
+@FeignClient(name = "payment-service", url = "https://returnxpayment.herokuapp.com/payment")
 public interface PaymentClient {
 
 	@PostMapping("/processpayment/{requestId}/{cardNumber}/{creditLimit}/{processingCharge}")
