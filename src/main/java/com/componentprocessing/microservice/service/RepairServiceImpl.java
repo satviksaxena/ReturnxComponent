@@ -72,10 +72,10 @@ public class RepairServiceImpl implements ProcessRequestService{
     	 if((int)check>0) {
       	   
       	   log.info("Successful Operation Message displayed");
-      	   return "Operation Successful";
+      	   return "Payment Successful";
          }
          else {
-      	   return "Operation Not Successful";
+      	   return "Payment Not Successful";
          }
 	}
     
